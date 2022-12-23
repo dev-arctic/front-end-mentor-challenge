@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@500&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@300;500&family=Open+Sans:wght@500&family=Rubik&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100;300;500&family=Open+Sans:wght@500&family=Rubik&display=swap');
+body {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+#main-container {
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: hsl(32, 37%, 90%);
+}
+#left-side {
+    background: url(images/image-product-desktop.jpg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+h1 {
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    
+}
+h2 {
+    font-family: 'Rubik', sans-serif;
+}
+#right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+button {
+    margin-top: auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color:  hsl(158, 36%, 37%);
+    color: aliceblue;
+    font-weight: bolder;
+    transition: 300ms all;
+    cursor: pointer;
+}
+#price {
+    width: 100%;
+    display: flex;
+}
+span {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+#first-span {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+#last-span {
+    text-decoration: line-through;
+}
+p {
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif;
+}
+button:hover {
+    background-color:  hsla(158, 36%, 37%, 0.848);
+
+}
+@media only screen and (max-width: 700px) {
+   #left-side {
+    display: none;
+   }
+    #price{
+        margin-bottom: 15px;
+        transition: 300ms all;
+    }
+    * {
+        /* FAILED SRRY  */
+    }
+}
